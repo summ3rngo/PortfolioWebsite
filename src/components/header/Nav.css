@@ -1,0 +1,78 @@
+.navbar {
+    height: 64px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--secondary-bg);
+}
+
+.navbar-left {
+    margin-left: 20px;
+    margin-right: 198px;
+}
+.logo {
+    width: 45px;
+    height: 45px;
+    border-radius: 15px;
+}
+
+.navbar-center ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+}
+
+.navbar-center li {
+    margin: 0 40px;
+    font-size: 20px;
+    border: none;
+}
+
+.navbar-center a:hover {
+    color: var(--primary-color);
+}
+
+.navbar-center a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.navbar-right {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.navbar-right a {
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.navbar-right a:hover {
+    background-color: var(--primary-color);
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.navbar-right a {
+    color: var(--primary-color);
+  border: 2px solid var(--secondary-color);
+  border-radius: 15px;
+  border: 2px solid var(--primary-color);
+  padding: 10px 20px;
+  font-weight: 600;
+  transition: background-color 0.3s ease-out;
+}
+
+.active {
+    color: var(--primary-color);
+}
+

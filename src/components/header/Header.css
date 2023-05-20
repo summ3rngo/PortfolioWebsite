@@ -1,0 +1,58 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 64px);
+    background-color: var(--primary-bg);
+}
+
+.header .left {
+    text-align: left;
+    padding-left: 50px;
+}
+
+.wrap span {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    
+}
+
+section.header h1 {
+    font-size: 5.0em;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-top: 20px;
+
+
+}
+
+section.header img {
+    width: 80%;
+    height: 80%;
+}
+
+.header .tagline {
+    font-weight: 600;
+    letter-spacing: 0.9px;
+    background-image: linear-gradient(
+        to right,
+        rgba(228, 212, 255, 0.4),
+        rgba(142, 117, 224, 0.4)
+    );
+    padding: 10px 10px;
+    font-size: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.vertical-bar {
+    display: inline-block;
+    animation: blink 0.7s infinite alternate; /* Add animation to make it blink */
+    color:rgba(142, 117, 224, 0.4);
+  }
+  
+  @keyframes blink {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
