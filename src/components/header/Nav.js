@@ -2,6 +2,8 @@ import React from 'react'
 import './Nav.css'
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 import { useState } from 'react'
+import { Link } from 'react-scroll'
+
 
 
 const Nav = ({logo}) => {
@@ -28,20 +30,24 @@ const Nav = ({logo}) => {
     const updateActiveLink = (value) => {
 
       setactive(value);
+      console.log(value);
+      
     }
 
     return (
-        <nav className="navbar">
+        <nav id="navbar" className="nav-bar">
           <div className="navbar-left">
             {/* Logo */}
+          <Link activeClass="active" smooth duration={100}spy to="home">
             <img className='logo' style={{cursor: 'pointer'}} onClick={() => updateActiveLink('home')} src={logo} alt='logo'></img>
+            </Link>
           </div>
           <div className="navbar-center">
             {/* Links */}
             <ul>
-              <li><a href="#about" className={active === 'about' ? 'active' : ''} onClick={() => updateActiveLink('about')}>About</a></li>
-              <li><a href="#skills" className={active === 'skills' ? 'active' : ''} onClick={() => updateActiveLink('skills')}>Skills</a></li>
-              <li><a href="#projects" className={active === 'projects' ? 'active' : ''}  onClick={() => updateActiveLink('projects')}>Projects</a></li>
+              <li><Link  activeClass="active" smooth duration={100} spy to="about" className={active === 'navbar-link about' ? 'active' : 'navbar-link'} onClick={() => updateActiveLink('about')}>About</Link></li>
+              <li><Link  activeClass="active" smooth duration={100} spy to="skills" className={active === 'navbar-link skills' ? 'active' : 'navbar-link'} onClick={() => updateActiveLink('skills')}>Skills</Link></li>
+              <li><Link  activeClass="active" smooth duration={100} spy to="projects" className={active === 'navbar-link projects' ? 'active' : 'navbar-link'}  onClick={() => updateActiveLink('projects')}>Projects</Link></li>
             </ul>
           </div>
             <div className="navbar-right">
@@ -50,7 +56,7 @@ const Nav = ({logo}) => {
               onMouseEnter={linkedInHover} onMouseLeave={linkedInDefault}  />
             <AiFillGithub style={{fontSize: '40px', marginRight: '10px', color: github ? 'var(--primary-color' : 'white', cursor: 'pointer'}} 
               onMouseEnter={githubHover} onMouseLeave={githubDefault} />
-            <a className='btn' href='#contact' onClick={() => updateActiveLink('contact')}>Contact Me</a>
+            <Link className='btn' activeClass="active" smooth duration={100} spy to="contact" onClick={() => updateActiveLink('contact')}>Contact Me</Link>
             
         </div>
     </nav>

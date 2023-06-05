@@ -1,8 +1,10 @@
 import React from 'react'
 import './Header.css'
 import { Col, Container, Row } from 'react-bootstrap'
-import { ArrowRightCircle } from 'react-bootstrap-icons'
+import { ArrowRightCircle, Download } from 'react-bootstrap-icons'
 import { useState, useEffect } from 'react'
+import { ReactComponent as Planet } from '../../assets/Saturn.svg'
+import { ReactComponent as Stars} from '../../assets/stars.svg'
 
 
 // FUNCTIONS DEMO'ed
@@ -30,7 +32,6 @@ const Header = ({headerimg}) => {
     const gradientStops = ['rgba(228,212,255,0.5)', 'rgba(142,117,224,0.5)'];
     const percentage = (text.length / toRotate[loopNum % toRotate.length].length) * 100;
     const index = Math.floor((percentage / 100) * (gradientStops.length - 1));
-    console.log(gradientStops[index]);
     return gradientStops[index];
   };
 
@@ -53,7 +54,7 @@ const Header = ({headerimg}) => {
     } else if (isDeleting && updatedText === '') {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
-      setDelta(500);
+      setDelta(300);
       setShowVerticalBar(true);
     } else {
       setShowVerticalBar(true);
@@ -66,18 +67,26 @@ const Header = ({headerimg}) => {
           <Row className="align-items-center">
             <Col className="left" xs={12} md={6} xl={7}>
               <span className="tagline">Transforming Ideas into Reality</span>
-              <h1>
-                Hi, I'm Summer Ngo
+              <h1> <span className="intro"> Hi! I am <br></br> </span>
+                  Summer Ngo
                 <div className="wrap">
-                  I am a <span style={{ backgroundImage: `linear-gradient(to right, ${getGradientColor()})` }}>{text}</span>
+                  <span style={{ backgroundImage: `linear-gradient(to right, ${getGradientColor()})` }}>{text}</span>
                   {showVerticalBar && <span className="vertical-bar" style={{ backgroundImage: `linear-gradient(to right, ${getGradientColor()})` }}>|</span>}
                 </div>
               </h1>
-              <button onClick={() => console.log('connect')}>Let's connect<ArrowRightCircle size={25}/></button>
-            </Col>
-            <Col xs={12} md={6} xl={5} className="text-center">
-              <img src={headerimg} alt="Header"></img>
 
+              <div className='buttons'>
+                <button className="btn btn-primary" id="download-btn" onClick={() => console.log('connect')}>Download Resume<Download style={{ marginLeft: '10px'}} size={27} /></button>
+                <button className="btn btn-primary" id="project-btn" onClick={() => console.log('connect')}>See Projects<ArrowRightCircle style={{ marginLeft: '10px'}} size={27} /></button>
+              </div>
+              
+            </Col>
+            <Col xs={12} md={6} xl={5} className="text-center custom-col">
+              <Planet id="planet-svg" className="background-svg" size={75}/>
+              <Stars id="stars-svg" className="background-svg" />
+              <div className='img-container'>
+                {/*<img src={headerimg} alt="Header"></img>*/}
+              </div>
             </Col>
           </Row>   
        </Container>

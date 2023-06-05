@@ -1,11 +1,13 @@
-.navbar {
+.nav-bar {
     height: 64px;
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--secondary-bg);
+    background-color: black;
+    position: fixed;
+    z-index: 5;
 }
 
 .navbar-left {
@@ -34,11 +36,11 @@
     border: none;
 }
 
-.navbar-center a:hover {
+.navbar-center .navbar-link:hover {
     color: var(--primary-color);
 }
 
-.navbar-center a {
+.navbar-center .navbar-link {
     color: var(--text-color);
     text-decoration: none;
 }
@@ -57,22 +59,27 @@
 }
 
 .navbar-right a:hover {
-    background-color: var(--primary-color);
-    border: 2px solid var(--secondary-color);
-    color: var(--secondary-color);
+    background: linear-gradient(
+        to right,
+        rgba(255,45,210, 0.4),
+        rgba(54,181,255, 0.4)
+    ) padding-box,
+    linear-gradient(to right, var(--primary-color), var(--secondary-color)) border-box;
+    color: black;
 }
 
 .navbar-right a {
     color: var(--primary-color);
-  border: 2px solid var(--secondary-color);
-  border-radius: 15px;
-  border: 2px solid var(--primary-color);
-  padding: 10px 20px;
-  font-weight: 600;
-  transition: background-color 0.3s ease-out;
+    background: linear-gradient(black, black) padding-box,
+              linear-gradient(to right, var(--primary-color), var(--secondary-color)) border-box;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-weight: 600;
+    transition: background-color 0.3s ease-out;
 }
 
-.active {
+.navbar-center ul li .active {
     color: var(--primary-color);
-}
+  }
 
