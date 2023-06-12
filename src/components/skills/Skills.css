@@ -1,0 +1,97 @@
+#skills {
+    background-color: var(--primary-bg);
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.section-header h1 {
+    font-size: 3em;
+    color: var(--text-color);
+    padding-top: 100px;
+    text-align: center;
+
+}
+
+.section-header span {
+    color: white;
+    animation: glow 3.0s ease-in-out infinite;
+}
+
+.box-heading {
+    font-weight: 600;
+    color: #FF9CEA;
+    letter-spacing: 1.2px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.programming-text {
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    margin-bottom: 40px
+
+}
+
+.programming-skills {
+    width: 90%;
+}
+
+.react-multi-carousel-list {
+    display: block;
+}
+
+.slider-buttons {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    opacity: 0.5;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    margin-left: 50px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+#skills .slide {
+    width: 65%;
+    height: 65%;
+    background-Color: rgb(43, 27, 94);
+    border-radius: 20px;
+    padding: 0;
+}
+
+@media (max-width: 991px) {
+    #skills {
+        min-height: 900px;
+    }
+
+    #skills .slide {
+        width: 90%;
+        min-height: 63%;
+    }
+
+    .programming-skills .programming-text {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .slider-buttons {
+        width: 35px;
+        height: 35px;
+    }
+
+    .slider-buttons {
+        top: 93%;
+    }
+}
