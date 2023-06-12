@@ -65,7 +65,7 @@ const [availableHeight, setAvailableHeight] = useState(0);
     </div>
 
     <div id="personal-section" className={active==='personal' ? 'display about-sections' : 'about-sections nodisplay' }>
-        <Row noGutters className="align-items-center gx-0" style={{ height: availableHeight, padding: '0 25px' }}>
+        <Row className="align-items-center gx-0" style={{ height: availableHeight, padding: '0 25px' }}>
             <Col className="text-center custom-col d-flex align-items-center justify-content-center" xs={12} md={5} xl={5}>
             <div className='img-container'>
                 <img src={AboutImg} alt="Header"></img>
@@ -88,7 +88,7 @@ const [availableHeight, setAvailableHeight] = useState(0);
        </div>
 
        <div id="education-section" className={active==='education' ? 'display about-sections' : 'about-sections nodisplay' }>
-        <Row noGutters className="align-items-center gx-0" style={{ height: availableHeight, padding: '0 25px' }}>
+        <Row className="align-items-center gx-0" style={{ height: availableHeight, padding: '0 25px' }}>
             <Col className="text-center custom-col d-flex align-items-center justify-content-center" xs={12} md={5} xl={5}>
             <div className='img-container'>
                 <img src={AboutImg} alt="Header"></img>
@@ -117,7 +117,7 @@ const [availableHeight, setAvailableHeight] = useState(0);
 
        <div id="values-section"  className={active==='values' ? 'display about-sections' : 'about-sections nodisplay' }>
        <h3 id='values-heading' className='intro-heading'> Core Values </h3>
-       <Row noGutters className='gx-0' style={{ height: isSmallScreen ? '1200px' : availableHeight, padding: '0 25px', overflow: 'scroll' }}>
+       <Row className='gx-0' style={{ height: isSmallScreen ? '1200px' : availableHeight, padding: '0 25px', overflow: 'scroll' }}>
               <Col xs={12} md={6} xl={6} className="d-flex align-items-center justify-content-center">
                     <div className='values-container'>
                     <PlanetBullet className='planet-bullet' style={{
