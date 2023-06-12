@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/react-gh-pages/static/css/main.2965862a.css",
+    "main.js": "/react-gh-pages/static/js/main.1402747b.js",
+    "static/js/787.28cb0dcd.chunk.js": "/react-gh-pages/static/js/787.28cb0dcd.chunk.js",
+    "static/media/HMSCoverImg.jpg": "/react-gh-pages/static/media/HMSCoverImg.04e234cbab55e2db4246.jpg",
+    "static/media/Proj2Img.png": "/react-gh-pages/static/media/Proj2Img.84050dc56a85f6bc9d8f.png",
+    "static/media/Proj1Img.png": "/react-gh-pages/static/media/Proj1Img.384c3c5059ee334138b6.png",
+    "static/media/headerImg.png": "/react-gh-pages/static/media/headerImg.14914d28384e5371aee3.png",
+    "static/media/aboutImg.jpeg": "/react-gh-pages/static/media/aboutImg.42c6eabf97124330b282.jpeg",
+    "static/media/circlepfp.png": "/react-gh-pages/static/media/circlepfp.6a0c21358b0c6b0a2f34.png",
+    "static/media/logo.png": "/react-gh-pages/static/media/logo.3354db04078abcaff9e8.png",
+    "static/media/planet-bullet.svg": "/react-gh-pages/static/media/planet-bullet.94bfff7e2d30e2c4a029c921e4742d53.svg",
+    "static/media/stars.svg": "/react-gh-pages/static/media/stars.5b69cc7dd12583c00c3255605c731819.svg",
+    "static/media/Saturn.svg": "/react-gh-pages/static/media/Saturn.3e02e48c794aff90a7e91ea6b5f8162d.svg",
+    "index.html": "/react-gh-pages/index.html",
+    "main.2965862a.css.map": "/react-gh-pages/static/css/main.2965862a.css.map",
+    "main.1402747b.js.map": "/react-gh-pages/static/js/main.1402747b.js.map",
+    "787.28cb0dcd.chunk.js.map": "/react-gh-pages/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2965862a.css",
+    "static/js/main.1402747b.js"
+  ]
+}
