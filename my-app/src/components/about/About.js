@@ -6,6 +6,7 @@ import { Row, Container, Col} from 'react-bootstrap'
 import { GeoAltFill, Envelope } from 'react-bootstrap-icons'
 import { ReactComponent as PlanetBullet } from '../../assets/planet-bullet.svg'
 import { useMediaQuery } from 'react-responsive'
+import AboutImg from '../../assets/aboutImg.jpeg'
 
 export const About = () => {
 const [active, setActive] = useState('personal');
@@ -67,7 +68,7 @@ const [availableHeight, setAvailableHeight] = useState(0);
         <Row noGutters className="align-items-center gx-0" style={{ height: availableHeight, padding: '0 25px' }}>
             <Col className="text-center custom-col d-flex align-items-center justify-content-center" xs={12} md={5} xl={5}>
             <div className='img-container'>
-                {/*<img src={headerimg} alt="Header"></img>*/}
+                <img src={AboutImg} alt="Header"></img>
               </div>
             </Col>
             <Col xs={12} md={7} xl={7} className="text-left custom-col" style={{paddingLeft: '10px'}}>
@@ -90,7 +91,7 @@ const [availableHeight, setAvailableHeight] = useState(0);
         <Row noGutters className="align-items-center gx-0" style={{ height: availableHeight, padding: '0 25px' }}>
             <Col className="text-center custom-col d-flex align-items-center justify-content-center" xs={12} md={5} xl={5}>
             <div className='img-container'>
-                {/*<img src={headerimg} alt="Header"></img>*/}
+                <img src={AboutImg} alt="Header"></img>
               </div>
             </Col>
             <Col xs={12} md={7} xl={7} className="text-left custom-col">

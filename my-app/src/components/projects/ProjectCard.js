@@ -1,7 +1,5 @@
 import React from 'react'
 import { Col } from 'react-bootstrap'
-import ProjImg1 from '../../assets/Proj1Img.png'
-import ProjImg2 from '../../assets/Proj2Img.png'
 
 const ProjectCard = ({title, description, imgURL, alt}) => {
   return (

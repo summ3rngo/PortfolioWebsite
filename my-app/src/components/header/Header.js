@@ -90,10 +90,10 @@ const Header = ({headerimg, updateActiveLink, active}) => {
               
             </Col>
             <Col xs={12} md={6} xl={5} className='text-center custom-col'>
-              <Planet id='planet-svg' className='background-svg' size={75}/>
+              <Planet id='planet-svg' className='background-svg'/>
               <Stars id='stars-svg' className='background-svg' />
-              <div className='headerImg-container'>
-                <img src={HeaderImg} alt='Header'></img>
+              <div className='headerImgCircle-container' style={{display: isMediumScreen ? 'none' : 'flex'}}>
+                <img src={HeaderImgCircle} alt='Header'></img>
               </div>
             </Col>
           </Row>   

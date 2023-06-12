@@ -4,6 +4,7 @@ import {Container, Row, Col} from 'react-bootstrap'
 import ProjectCard from '../projects/ProjectCard.js'
 import ProjImg1 from '../../assets/Proj1Img.png'
 import ProjImg2 from '../../assets/Proj2Img.png'
+import ProjImg3 from '../../assets/HMSCoverImg.jpg'
 
 
 const Projects = () => {
@@ -23,7 +24,7 @@ const Projects = () => {
     {
       title: 'Hospital Management System',
       description: 'Object-Oriented Programming in Java',
-      imgURL: '',
+      imgURL: ProjImg3,
       alt: 'Hospital Management System Project Image',
     }, 
 

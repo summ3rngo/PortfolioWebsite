@@ -140,7 +140,7 @@ section.header h1 {
 
   .headerImgCircle-container {
     width: 90%;
-    height: 20%;
+    height: 50%;
     position: relative;
     z-index: 1;
     display: flex;
@@ -150,7 +150,7 @@ section.header h1 {
 }
 
 .headerImgCircle-container img {
-    width: 50%;
+    width: 70%;
     height: 100%;
     object-fit: contain;
     object-position: center;
@@ -226,6 +226,25 @@ section.header h1 {
         height: 60px;
         border-radius: 50px;
     }
+
+    .headerImgCircle-container {
+        width: 90%;
+        height: 50%;
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 70px;
+    }
+    
+    .headerImgCircle-container img {
+        width: 50%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+    
+    }
   }
 
   @media (max-width: 1024px) { 
@@ -264,5 +283,10 @@ section.header h1 {
   @media (min-width: 768px) and (max-width: 1024px) {
     .headerImg-container {
         display: block;
+    }
+
+    .header .tagline {
+        font-size: 15px;
+        z-index: 10;
     }
   }
