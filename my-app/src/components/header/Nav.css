@@ -58,7 +58,7 @@
     font-size: 16px;
 }
 
-#contact-btn:hover {
+#btn-contact:hover {
     background: linear-gradient(
         to right,
         rgba(255,45,210, 0.4),
@@ -87,7 +87,6 @@
     color: var(--primary-color);
     background: linear-gradient(black, black) padding-box,
               linear-gradient(to right, var(--primary-color), var(--secondary-color)) border-box;
-    border: 2px solid transparent;
     border-radius: 15px;
     padding: 10px 20px;
     font-weight: 600;
