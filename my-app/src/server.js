@@ -8,9 +8,10 @@ app.use(cors());
 app.use(express.json());
 app.use("/", router);
 app.listen(5000, () => console.log("Server Running"));
-console.log(process.env.EMAIL_USER);
-console.log(process.env.EMAIL_PASS);
 
+router.get("/", (req, res) => {
+    res.send("Hello, Server is running!"); // Send a simple response
+  });
 
 const contactEmail = nodemailer.createTransport({
     service: 'gmail',

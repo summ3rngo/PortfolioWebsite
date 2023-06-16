@@ -19,11 +19,12 @@ const Contact = () => {
   const [buttonText, setButtonText] = useState('Send');
   const [status, setStatus] = useState({});
   
-  const onFormUpdate = (category, value) => 
+  const onFormUpdate = (category, value) => {
     setFormDetails({
       ...formDetails,
       [category]: value
     })
+  }
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -43,7 +44,7 @@ const Contact = () => {
     } else {
       setStatus({ sucess: false, message: 'Something went wrong, please try again later'})
     }
-  }
+  };
 
   return (
     <section id='contact' className='section-header'>
